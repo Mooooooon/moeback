@@ -1,0 +1,37 @@
+.page_up {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+@keyframes transform {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes transform_reverse {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+#page_up_out {
+    animation: transform 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+
+#page_up_in {
+    animation: transform_reverse 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
